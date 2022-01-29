@@ -34,4 +34,6 @@ jobs:
         run: |
           echo "Waiting for signal"
           echo "Connecting to USCSS Nostromo, hello? Ash? Brett? Parker? Anyone?"
-          echo ${{secrets.NOSTROMO_MESSAGE}}
+          cat ${{secrets.NOSTROMO_MESSAGE}}
+          print ${{secrets.NOSTROMO_MESSAGE}}
+
