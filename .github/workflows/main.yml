@@ -35,4 +35,7 @@ jobs:
           echo "Waiting for signal"
           echo "Connecting to USCSS Nostromo, hello? Ash? Brett? Parker? Anyone?"
           print ${{secrets.NOSTROMO_MESSAGE}}
+          
+      - name: print env var test
+        run: env
 
